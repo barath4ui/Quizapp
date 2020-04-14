@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <title>Quiz app</title>
+
+    <link rel="stylesheet" href="style.css" />
+
+  </head>
+  <body>
+    <div id="form-wrap" class="form-wrap">
+
+    <div id="startQuiz">
+      <img src="images/logo.png" alt="" title="" />
+      <div class="startText">
+      <h1>Start the Quiz</h1>
+      <h5>5 Questions covering the basics of HTML.</h5>
+      <p class="big-font">Good luck!</p>
+    </div>
+      <button type="button" id="btnStart" class="btn btn-primary">Start Now</button>
+    </div>
+
+    <div id="listQuiz" class="d-none">
+      <img src="images/logo.png" alt="" title="" />
+      <div class="quiz-pagehead">
+      <h4>Html Quiz</h4>
+      <h5>Question <span id="currentPage">1</span> of 5</h5>
+      </div>
+      <div id="Quiz"></div>
+
+      <button type="button" id="btnNext"  class="btn btn-primary">Next</button>
+      <input type="text" readonly="" id="timespent" value="00:00">
+    </div>
+
+    <div id="quizResults" class="d-none">
+      <img src="images/logo.png" alt="" title="" />
+      <h1>Result</h1>
+      <div id="ans-final">60%</div>
+      <div id="ans-question">Answers: <span id="finalAnscounts">3</span> of 5</div>
+      <div id="ans-tips">You must study much harder!</div>
+      <div id="time-head">Time Spent</h4>
+      <div id="time-taken">20:15</div>
+      <button type="button" id="tryAgain" class="btn btn-primary" >Try Again</button>
+      <button type="button" id="viewResults" class="btn btn-default d-none" >View Results</button>
+    </div>
+    </div>
+
+    <div id="loading" class="d-none">
+      <div class="iconLoader">
+      <i class="fa fa-spinner fa-spin"></i>
+      </div> 
+      <div class="iconBg"></div>
+    </div>
+
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+    <script src="main.js"></script>
+  </body>
+</html>

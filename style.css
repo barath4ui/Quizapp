@@ -1,0 +1,142 @@
+body{
+    background-color: #3548F5;
+    color:#5B5C65;
+}
+
+
+.form-wrap{
+   
+    padding: 30px;
+    width: 500px;
+    height: 400px;
+    background-color: #fff;
+
+    position:absolute; /*it can be fixed too*/
+    left:0; right:0;
+    top:0; bottom:0;
+    margin:auto;
+
+    /*this to solve "the content will not be cut when the window is smaller than the content": */
+    max-width:100%;
+    max-height:100%;
+    overflow:auto;
+}
+    
+h1{
+    color:#333;
+    margin-top: 30px;
+}
+
+
+.big-font{
+    font-size: 24px;
+}
+
+.d-none{
+    display: none;
+}
+.d-block{
+    display: block;
+}
+
+.answer-label{
+    display: block;
+}
+#timespent{
+    width: 60px;
+    border: none;
+    position: absolute;
+    left: 30px;
+    bottom:30px;
+    color:#3548F5;
+    font-size: 20px;
+    font-weight: 500;
+}
+.btn{
+    position: absolute;
+    right: 30px;
+    bottom:30px;
+    padding: 4px 30px;
+    border-radius: 0;
+    width: 132px;
+}
+.quiz-pagehead{
+    position: absolute;
+    right: 30px;
+    top:30px;
+    text-align: right;
+    color:#3548F5;
+}
+.quiz-pagehead h4{
+    font-size: 20px;
+    font-weight: bold;
+}
+.quiz-pagehead h5{
+    color: #5B5C65;
+    font-weight: 400;
+    font-size: 18px;
+}
+.questionWrap{
+    margin-top: 30px;
+}
+.questionWrap .question{
+    margin-bottom: 20px;
+    font-size: 16px;
+    font-weight: 500;
+}
+.questionWrap .answers .answer-label{
+    font-size: 14px;
+    padding:5px 10px;
+    border: 1px solid #B1B1B1;
+    cursor: pointer;
+}
+.questionWrap .answers .answer-label input{
+    width: 0;
+}
+.questionWrap .answers .answer-label:hover,
+.questionWrap .answers .answer-label:active {
+   border-color: #3548F5;
+   color: #3548F5;
+   background-color: #F3F4FF;
+}
+
+.active  {
+   border-color: #3548F5;
+   color: #3548F5;
+   background-color: #F3F4FF;
+}
+#ans-final{
+    position: absolute;
+    top: 110px;
+    right: 60px;
+    font-size: 40px;
+    font-weight: bold;
+}
+#time-taken{
+    font-weight: bold;
+    font-size: 20px;
+}
+.red{
+    color: red;
+}
+.green{
+    color: green;
+}
+.iconLoader{
+    position: relative;
+    z-index: 100000;
+    color: #fff;
+    font-size: 40px;
+    text-align: center;
+    top:-90px;
+}
+.iconBg{
+    background-color: #3548F5;
+    color: #fff;
+    position: absolute;
+    top:0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1000;
+}
