@@ -59,7 +59,6 @@ h1{
     padding: 4px 30px;
     border-radius: 0;
     width: 140px;
-    background:#000;
 }
 .quiz-pagehead{
     position: absolute;
@@ -141,3 +140,15 @@ h1{
     width: 100%;
     z-index: 1000;
 }
+
+@media only screen and (max-width: 600px) {
+    body {
+      background-color: green;
+    }
+}
+
+@media  (min-width: 600px)  and (max-width: 768px) {
+    body {
+      background-color:red;
+    }
+  }
