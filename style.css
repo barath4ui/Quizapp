@@ -59,6 +59,7 @@ h1{
     padding: 4px 30px;
     border-radius: 0;
     width: 140px;
+    background:#000;
 }
 .quiz-pagehead{
     position: absolute;
